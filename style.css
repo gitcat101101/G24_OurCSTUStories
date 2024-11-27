@@ -129,7 +129,6 @@ nav a.active {
     transition: transform 0.3s ease;
 }
 
-/* à¸£à¸¹à¸›à¸ à¸²à¸ž */
 .image-layer img {
     position: absolute;
     top: 0;
@@ -140,7 +139,6 @@ nav a.active {
     transition: opacity 0.3s ease;
 }
 
-/* à¸‹à¹ˆà¸­à¸™à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡à¹ƒà¸™à¸•à¸­à¸™à¹à¸£à¸ */
 .popup {
     position: absolute;
     bottom: 20px;
@@ -153,20 +151,97 @@ nav a.active {
     border-radius: 5px;
     opacity: 0;
     transition: opacity 0.3s ease;
-    pointer-events: none; /* à¸›à¹‰à¸­à¸‡à¸à¸±à¸™à¸à¸²à¸£à¹‚à¸•à¹‰à¸•à¸­à¸šà¸à¸±à¸šà¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡ */
+    pointer-events: none;
 }
 
-/* à¹€à¸­à¸Ÿà¹€à¸Ÿà¸à¸•à¹Œ Hover */
+
 .image-layer:hover img {
-    opacity: 0; /* à¸‹à¹ˆà¸­à¸™à¸ à¸²à¸ž */
+    opacity: 0;
 }
 
 .image-layer:hover .popup {
-    opacity: 1; /* à¹à¸ªà¸”à¸‡à¸‚à¹‰à¸­à¸„à¸§à¸²à¸¡ */
+    opacity: 1;
 }
 
 .image-layer:hover {
     background-size: cover;
     background-position: center;
-    transform: scale(1.05); /* à¹€à¸žà¸´à¹ˆà¸¡à¸à¸²à¸£à¸‹à¸¹à¸¡à¹€à¸¥à¹‡à¸à¸™à¹‰à¸­à¸¢ */
+    transform: scale(1.05);
+}
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff3b3f;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    font-size: 14px;
+    color: red;
+    display: none;
+    margin-top: 5px;
+}
+
+.btn-submit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff3b3f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #d73236;
+}
+
+.entry-list {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.entry-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.entry-item h3 {
+    margin: 0 0 5px;
+    color: #ff3b3f;
 }
