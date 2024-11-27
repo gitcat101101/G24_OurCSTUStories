@@ -79,6 +79,29 @@
                 
             </p>
         </div>
+        <main class="content">
+            <h1>Guest Book</h1>
+            <p class="top-text">
+                Share your thoughts, suggestions, or feedback with us!
+            </p>
+            <form id="guestBookForm" class="form-container">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter your name">
+                <span class="error-message" id="nameError"></span>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <span class="error-message" id="emailError"></span>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Write your message"></textarea>
+                <span class="error-message" id="messageError"></span>
+    
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+    
+            <h2>Submitted Entries</h2>
+            <div id="entries" class="entry-list"></div>
+        </main>
 
 
     </main>
