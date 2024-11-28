@@ -301,6 +301,7 @@ textarea {
     opacity: 10;
     margin-left: 5%;
     margin-right: 5%;
+    
 }
 
 .Journey-info{
@@ -308,13 +309,19 @@ textarea {
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom:5%;
 }
 .Journey-info h1 {
     color: #FD3137;
     border: 3px solid #FD3137;
     text-decoration: none;
     padding: 10px;
-    font-weight: 700;
+    font-weight: 700px;
     
+}
+.Journey-info p{
+    text-align: center  ;
+   
 }
 
