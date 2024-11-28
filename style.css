@@ -55,7 +55,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(249, 208, 86);
     font-size: 24px;
     font-weight: normal;
     position: relative;
@@ -365,7 +365,6 @@ select:focus {
 
 }
 
-/*future css*/
 
 .top-text-future {
     display: flex;
@@ -412,3 +411,12 @@ select:focus {
     background-color: #d12d31;
     transform: scale(1.1);
 }
+/*light theme*/
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --content-background: #f9f9f9;
+    --accent-color: #ff3b3f;
+}
+
+
