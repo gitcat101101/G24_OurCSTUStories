@@ -56,15 +56,12 @@ nav a.active {
     color: #ff3b3f;
 }
 
-
 .top-text {
     margin-top: 5%;
-    
+    margin-right:5% ;
     font-size: 24px;
     line-height: 40px;
     text-align: right;
-    margin-right: 5%;
-    
 }
 
 .bottom-text {
@@ -75,12 +72,9 @@ nav a.active {
     padding-right: 5%;
 }
 
-
 .red-text {
     color: red;
 }
-
-
 
 .grid-container {
     display: grid;
@@ -90,26 +84,6 @@ nav a.active {
     align-self: center;
     padding-top: 5%;
     gap: 20px;
-}
-
-.image-layer {
-    position: relative;
-    width: 100%;
-    padding-top: 100%;
-    background-color: #fff;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-layer img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 .image-layer {
@@ -150,7 +124,6 @@ nav a.active {
     pointer-events: none;
 }
 
-
 .image-layer:hover img {
     opacity: 0;
 }
@@ -183,9 +156,7 @@ textarea {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
-
     font-size: 16px;
-
 }
 
 input:focus,
@@ -224,15 +195,12 @@ textarea {
 .entry-list {
     margin-top: 20px;
     padding: 20px;
-    width: 25%;
-
+    width: 100%;
 }
 
 .entry-item {
     padding: 10px;
     margin-bottom: 10px;
-
-
 }
 
 .entry-item h3 {
@@ -243,49 +211,42 @@ textarea {
 .guestbook-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 120px;
     padding-bottom: 120px;
 }
 
-.left-content {
+.left-column {
     flex: 1;
-    max-width: 50%;
+    max-width: 45%;
     text-align: left;
-    padding: 50px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.left-content h2 {
+.left-column h1 {
     color: #ff3b3f;
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 20px;
-    text-align: righ;
 }
 
-.left-content p {
+.left-column p {
     font-size: 16px;
     line-height: 1.6;
-    color: #555;
     margin-bottom: 15px;
 }
 
-.right-guestbook {
+.right-column {
     flex: 1;
-    max-width: 50%;
-    padding: 20px;
+    max-width: 45%;
+}
+
+.right-column h1 {
+    font-size: 40px;
+    color: #ff3b3f;
+    margin-bottom: 20px;
     text-align: left;
 }
-
-.right-guestbook h1 {
-    color: #ff3b3f;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
 
 .form-container input[type=text],
 .form-container input[type=email],
@@ -296,7 +257,7 @@ textarea {
     padding-bottom: 13px;
     margin: 30px 0;
     height: 28px;
-    font-size: 16px;    
+    font-size: 16px;
     font-family: 'Montserrat', sans-serif, Arial;
     width: 100%;
     line-height: 25px;
@@ -306,44 +267,30 @@ textarea {
 .entry-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 .entry-profile {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #ff3b3f;
     color: white;
     font-size: 20px;
-    font-weight: bold;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     border-radius: 50%;
+    margin-right: 30px;
     text-transform: uppercase;
 }
 
-.entry-text h3 {
-    margin: 0;
-    color: #ff3b3f;
+.entry-text {
+    background-color: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    word-wrap: break-word;
+    max-width: 100%;
+    display: inline-block;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-.entry-text p {
-    margin: 5px 0 0;
-    color: #333;
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.entry-email {
-    margin: 5px 0;
-    font-size: 12px; 
-    color: #888; 
-
-}
-
