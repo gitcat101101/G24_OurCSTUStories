@@ -418,5 +418,28 @@ select:focus {
     --content-background: #f9f9f9;
     --accent-color: #ff3b3f;
 }
+/*Dark Theme */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --content-background: #1e1e1e;
+    --accent-color: #ff5e5e;
+}
 
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.content {
+    background-color: var(--content-background);
+}
+
+.logo, nav a.active, .entry-item h3, .btn-submit {
+    color: var(--accent-color);
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
 
