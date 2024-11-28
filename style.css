@@ -337,18 +337,7 @@ textarea {
 }
 
 
-select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 16px;
-    border: 2px solid #e2e0e0;
-    border-radius: 5px;
-    background-color: white;
-    color: #333;
-    cursor: pointer;
-    text-transform: capitalize;
-}
+
 
 select:focus {
     border-color: #ff3b3f;
@@ -367,3 +356,30 @@ select:focus {
 
 }
 
+
+/*future css*/
+
+.top-text-future{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.bottom-text-future{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+
+}
+
+.future-top-img{
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    
+    
+}
