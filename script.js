@@ -39,15 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isValid) {
             const entry = document.createElement('div');
             entry.className = 'entry-item';
-            entry.innerHTML = `
+
+            
+            const profile = document.createElement('div');
+            profile.className = 'entry-profile';
+            profile.textContent = fullName[0].toUpperCase(); 
+
+           
+            const textContainer = document.createElement('div');
+            textContainer.className = 'entry-text';
+            textContainer.innerHTML = `
                 <h3>${fullName}</h3>
-                <p><strong>Email:</strong> ${email}</p>
+                <p class="entry-email">${email}</p> <!-- แสดงอีเมล -->
                 <p>${message}</p>
             `;
 
+            entry.appendChild(profile);
+            entry.appendChild(textContainer);
             entries.appendChild(entry);
 
             form.reset();
         }
+
     });
 });

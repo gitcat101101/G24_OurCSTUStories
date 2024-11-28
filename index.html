@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Webpage</title>
+    <title>Responsive Styled Webpage</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -23,7 +23,6 @@
                     <a href="OurFuture.html">Future</a>
                 </nav>
             </div>
-
         </div>
 
         <div class="top-text">
@@ -31,98 +30,71 @@
                 <br>Welcome to our website where ideas come to life!</br>
                 This website is a collaborative effort by our group from
                 <span class="red-text">Six Cool Kids.</span>
-                <br>It showcases our journey, inspirations, and aspirations in the world of web development and
-                design.</br>
+                <br>It showcases our journey, inspirations, and aspirations in the world of</br>
+                Computer Science of Thammasat University.
             </p>
         </div>
 
         <div class="grid-container">
             <div class="image-layer">
-                <img src="recources\groupphoto.webp" alt="Clock">
+                <img src="recources/groupphoto.webp" alt="">
                 <div class="popup">Wooden Clock</div>
             </div>
 
             <div class="image-layer">
-                <img src="recources\groupphoto.webp" alt="Fish">
+                <img src="recources/groupphoto.webp" alt="">
                 <div class="popup">Ceramic Fish</div>
             </div>
 
             <div class="image-layer">
-                <img src="recources\groupphoto.webp" alt="Bottle">
+                <img src="recources/groupphoto.webp" alt="Bottle">
                 <div class="popup">Ceramic Bottle</div>
             </div>
 
             <div class="image-layer">
-                <a href="danny.html"> <img src="recources\groupphoto.webp" alt="Popsicle">
+                <a href="danny.html">
+                    <img src="recources/groupphoto.webp" alt="Popsicle">
                 </a>
                 <div class="popup">Blue Popsicle</div>
             </div>
 
             <div class="image-layer">
-                <img src="recources\groupphoto.webp" alt="Document">
+                <img src="recources/groupphoto.webp" alt="Document">
                 <div class="popup">Document Design</div>
             </div>
 
             <div class="image-layer">
-                <img src="recources\groupphoto.webp" alt="Document">
+                <img src="recources/groupphoto.webp" alt="Danny">
                 <div class="popup">Danny</div>
             </div>
         </div>
-        </div>
-
-        <div class="bottom-text">
-            <p>
-
-
-            </p>
-            <p>
-
-            </p>
-        </div>
 
         <div class="guestbook-container">
-            <div class="left-content">
-                <h2>About Us</h2>
-                <p>
-                    Welcome to our collaborative space where we showcase our journey, inspirations, and aspirations in the world of web design and development. 
-                </p>
-                <p>
-                    Feel free to explore our projects, read our stories, and connect with us!
-                </p>
-                <p>
-                    Thank you for visiting. We value your feedback, so don't hesitate to leave a message in the guestbook!
-                </p>
-            </div>
-        
-            <div class="right-guestbook">
+            <!-- Guest Book (left column) -->
+            <div class="left-column">
                 <h1>Guest Book</h1>
                 <p>Share your thoughts, suggestions, or feedback with us!</p>
                 <form id="guestBookForm" class="form-container">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" required placeholder="Enter your name">
+                    <input type="text" id="fullName" name="fullName" required placeholder="Name">
                     <span class="error-message" id="nameError"></span>
-        
-                    <label for="email">Email:</label>
+
                     <input type="email" id="email" name="email" required placeholder="Enter your email">
                     <span class="error-message" id="emailError"></span>
-        
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="Write your message"></textarea>
+
+                    <textarea id="message" name="message" rows="4" required placeholder="Write Your Message"></textarea>
                     <span class="error-message" id="messageError"></span>
-        
+
                     <button type="submit" class="btn-submit">Submit</button>
                 </form>
-        
+            </div>
+
+            <!-- Submitted Entries (right column) -->
+            <div class="right-column">
                 <h2>Submitted Entries</h2>
                 <div id="entries" class="entry-list"></div>
             </div>
         </div>
-        
-
-
     </main>
-
-
 </body>
 
 </html>
