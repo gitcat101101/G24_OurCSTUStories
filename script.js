@@ -76,4 +76,25 @@ document.addEventListener('DOMContentLoaded', () => {
             form.reset();
         }
     });
+
+    // Typewriter Animation
+    const typewriter = document.querySelector('.typewriter h1');
+    const text = "Step into the world of innovation and inspiration with us!";
+    let i = 0;
+
+    function typeEffect() {
+        if (i < text.length) {
+            typewriter.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeEffect, 100); // ความเร็วการพิมพ์ทีละตัวอักษร
+        } else {
+            setTimeout(() => {
+                typewriter.textContent = ""; // ลบข้อความทั้งหมด
+                i = 0;
+                typeEffect(); // เริ่มใหม่
+            }, 2000); // รอ 2 วินาทีก่อนเริ่มใหม่
+        }
+    }
+
+    typeEffect(); // เรียกฟังก์ชัน Typewriter Animation
 });
