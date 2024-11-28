@@ -457,10 +457,29 @@ nav a:hover {
 
 /* เอฟเฟกต์การพิมพ์ */
 @keyframes typing {
-    from { width: 0; } 
+    from { width: 0; }
     to { width: 100%; }
+}
 
 /* เอฟเฟกต์กระพริบของเคอร์เซอร์ */
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+.typewriter h1 {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text; /* ใช้พื้นหลังกับตัวอักษร */
+    -webkit-text-fill-color: transparent; /* ทำให้ตัวอักษรใส */
+    font-size: 2rem;
+    font-weight: bold;
+    animation: typing 4s steps(40, end), blink 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
 @keyframes blink {
     from, to { border-color: transparent; }
     50% { border-color: black; }
