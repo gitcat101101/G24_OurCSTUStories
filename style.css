@@ -264,7 +264,8 @@ textarea {
 
 .form-container input[type=text],
 .form-container input[type=email],
-.form-container textarea ,.form-container select {
+.form-container textarea,
+.form-container select {
     border: 0;
     border-bottom: 2px solid;
     padding-top: 13px;
@@ -336,9 +337,6 @@ textarea {
 
 }
 
-
-
-
 select:focus {
     border-color: #ff3b3f;
     outline: none;
@@ -356,10 +354,9 @@ select:focus {
 
 }
 
-
 /*future css*/
 
-.top-text-future{
+.top-text-future {
     display: flex;
     justify-content: space-between;
     margin-left: 5%;
@@ -367,7 +364,7 @@ select:focus {
 
 }
 
-.bottom-text-future{
+.bottom-text-future {
     display: flex;
     justify-content: space-between;
     margin-left: 5%;
@@ -376,10 +373,10 @@ select:focus {
 
 }
 
-.future-top-img{
+.future-top-img {
     display: flex;
     justify-content: center;
     padding-top: 10%;
-    
-    
+
+
 }
