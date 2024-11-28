@@ -25,6 +25,20 @@ body {
     padding-bottom: 120px;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+.left-footer-content {
+    color: #FD3137;
+}
+
+
 .logo {
     font-size: 50px;
     color: #ff3b3f;
@@ -180,16 +194,16 @@ textarea {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #ff3b3f;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    color: #FD3137;
+    background-color: white;
+    border: 3px solid #FD3137;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
-    background-color: #d73236;
+    background-color: #FD3137;
+    color: white;
 }
 
 .entry-list {
@@ -225,7 +239,7 @@ textarea {
 }
 
 .left-column h1 {
-    color: #ff3b3f;
+
     font-size: 40px;
     margin-bottom: 20px;
 }
@@ -243,7 +257,7 @@ textarea {
 
 .right-column h1 {
     font-size: 40px;
-    color: #ff3b3f;
+
     margin-bottom: 20px;
     text-align: center;
 }
@@ -301,27 +315,28 @@ textarea {
     opacity: 10;
     margin-left: 5%;
     margin-right: 5%;
-    
+
 }
 
-.Journey-info{
+.Journey-info {
     display: flex;
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 5%;
     margin-top: 5%;
-    margin-bottom:5%;
+    margin-bottom: 5%;
 }
+
 .Journey-info h1 {
     color: #FD3137;
     border: 3px solid #FD3137;
     text-decoration: none;
     padding: 10px;
     font-weight: 700px;
-    
-}
-.Journey-info p{
-    text-align: center  ;
-   
+
 }
 
+.Journey-info p {
+    text-align: center;
+
+}
