@@ -58,7 +58,7 @@ nav a.active {
 
 .top-text {
     margin-top: 5%;
-    margin-right:5% ;
+    margin-right: 5%;
     font-size: 24px;
     line-height: 40px;
     text-align: right;
@@ -245,7 +245,7 @@ textarea {
     font-size: 40px;
     color: #ff3b3f;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .form-container input[type=text],
@@ -289,8 +289,32 @@ textarea {
     background-color: #f9f9f9;
     padding: 10px 15px;
     border-radius: 8px;
-    word-wrap: break-word;
     max-width: 100%;
     display: inline-block;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/*our journey */
+
+.post-border {
+    border-bottom: 1px solid #eeeeee;
+    opacity: 10;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Journey-info{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 5%;
+}
+.Journey-info h1 {
+    color: #FD3137;
+    border: 3px solid #FD3137;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    
+}
+
