@@ -264,7 +264,7 @@ textarea {
 
 .form-container input[type=text],
 .form-container input[type=email],
-.form-container textarea {
+.form-container textarea ,.form-container select {
     border: 0;
     border-bottom: 2px solid;
     padding-top: 13px;
@@ -336,7 +336,34 @@ textarea {
 
 }
 
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 2px solid #e2e0e0;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+select:focus {
+    border-color: #ff3b3f;
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 59, 63, 0.5);
+}
+
+.error-message {
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+
 .Journey-info p {
     text-align: center;
 
 }
+
