@@ -26,6 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 120px;
 }
 
 
@@ -33,21 +34,24 @@ body {
 .footer {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .left-footer-content {
-    color: #FD3137;
+    max-width: 30%;
+    text-align: left;
 }
 .center-footer-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 25%; 
-    text-align: center;
+    max-width: 30%;    
 }
 .center-footer-content img {
-    max-width: 30%; /* Optional to ensure responsiveness */
+    max-width: 30%;
     height: auto;
+}
+
+.right-footer-content{
+    text-align: right;
+    max-width: 25%;
 }
 
 
@@ -83,7 +87,6 @@ nav a.active {
 
 .top-text {
     margin-top: 5%;
-    margin-right: 5%;
     font-size: 24px;
     line-height: 40px;
     text-align: right;
@@ -106,7 +109,7 @@ nav a.active {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding-top: 5%;
-    max-width: 1000px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -336,18 +339,24 @@ select {
 
 .Journey-info {
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .Journey-info h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: #ff3b3f;
-    border: 3px solid #ff3b3f;
+    color: #FD3137;
+    border: 3px solid #FD3137;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    max-height: 5%;
 }
 
 .Journey-info p {
     font-size: 1.1em;
     line-height: 1.8;
+    max-width: 30%;
     color: #555;
 }
 
@@ -376,14 +385,12 @@ select:focus {
 
 }
 .top-text-journey {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 1.2rem;
-    text-align: center;
-    margin-top: 5%;
-
+   
+text-align: left;
+font-size: 24px;
+max-width: 75%;
+margin-top: 5%;
+margin-bottom: 15%;
 }
 
 .left-text{
