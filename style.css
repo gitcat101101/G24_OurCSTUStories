@@ -32,15 +32,22 @@ body {
 
 .footer {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .left-footer-content {
     color: #FD3137;
 }
-.center-footer-content img{
-    width: 20%;
-    
+.center-footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%; 
+    text-align: center;
+}
+.center-footer-content img {
+    max-width: 30%; /* Optional to ensure responsiveness */
+    height: auto;
 }
 
 
