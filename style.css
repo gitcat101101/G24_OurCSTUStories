@@ -4,10 +4,16 @@ body {
     background-color: #e2e0e0;
     font-family: "D-DINExp", "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
+.typewriter h1 {
+    font-size: 5vw;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    margin-top: 5%;
+}
 .content {
-    max-width: auto;
-    max-height: auto;
+    max-width: 100%;
     background-color: white;
     margin: 40px;
     padding: 40px;
@@ -19,19 +25,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 40px;
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
-    padding-right: 5%;
-
+    padding: 40px;
 }
 
 .left-footer-content {
@@ -70,6 +71,7 @@ nav a.active {
     color: #ff3b3f;
 }
 
+
 .top-text {
     margin-top: 5%;
     margin-right: 5%;
@@ -93,11 +95,10 @@ nav a.active {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-top: 5%;
     max-width: 1000px;
     margin: 0 auto;
-    align-self: center;
-    padding-top: 5%;
-    gap: 20px;
 }
 
 .image-layer {
@@ -120,7 +121,6 @@ nav a.active {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: opacity 0.3s ease;
 }
 
 .popup {
@@ -150,6 +150,84 @@ nav a.active {
     background-size: cover;
     background-position: center;
     transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .top-text {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .guestbook-container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .typewriter h1 {
+        font-size: 6vw;
+    }
+}
+@media (max-width: 480px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .top-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        padding-top: 2%;
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer p {
+        margin-top: 10px;
+    }
+
+    .btn-submit {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    .typewriter h1 {
+        font-size: 8vw;
+    }
 }
 
 .form-container {
