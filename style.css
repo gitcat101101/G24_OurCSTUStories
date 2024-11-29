@@ -320,6 +320,9 @@ select {
     max-width: 100%;
     display: inline-block;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: var(--text-color); /* ใช้สีข้อความตาม theme */
+    background-color: var(--content-background); /*ใช้สีพื้นหลังตาม theme */
+
 }
 
 
