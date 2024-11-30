@@ -514,67 +514,27 @@ nav a:hover {
 }
 
 .typewriter h1 {
-    overflow: hidden;
-    border-right: 3px solid;
+    position: absolute;
     white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: 2px;
-    animation: typing 4s steps(40, end), blink 0.5s step-end infinite;
-}
-
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 100%;
-    }
-}
-
-
-@keyframes blink {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: black;
-    }
-}
-
-.typewriter h1 {
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    animation: scrollText 10s linear infinite; /* การเลื่อนข้อความ */
     font-size: 2rem;
     font-weight: bold;
-    animation: typing 4s steps(40, end), blink 0.5s step-end infinite;
+    color: transparent; /*ต้องตั้งค่าให้เป็นโปร่งใสเพื่อใช้ background-clip */
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 300%; /* ขยาย gradient เพื่อให้ดูเนียนขึ้น */
+    background-clip: text;
+    -webkit-background-clip: text; /*สำหรับเบราว์เซอร์ที่ใช้ Webkit */
+    text-fill-color: transparent; /*Safari */
 }
 
-@keyframes typing {
-    from {
-        width: 0;
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%); /*เริ่มจากนอกจอทางขวา */
+        background-position: 0%; /*เริ่ม gradient ที่ตำแหน่งแรก */
     }
-
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink {
-
-    from,
-    to {
-        border-color: transparent;
-    }
-
-    50% {
-        border-color: black;
+    100% {
+        transform: translateX(-100%); /*สิ้นสุดนอกจอทางซ้าย */
+        background-position: 100%; /*เลื่อน gradient */
     }
 }
 
