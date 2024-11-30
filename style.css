@@ -47,11 +47,11 @@ body {
 }
 
 .center-footer-content {
-    max-width: 30%;
+    max-width: 30%;    
 }
 
 .center-footer-content img {
-    max-width: 30%;
+    max-width: 90%;
     height: auto;
 }
 
