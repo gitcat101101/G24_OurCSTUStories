@@ -77,23 +77,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    const typewriter = document.querySelector('.typewriter h1');
-    const text = "Step into the world of innovation and inspiration with us!";
-    let i = 0;
-
-    function typeEffect() {
-        if (i < text.length) {
-            typewriter.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeEffect, 100);
-        } else {
-            setTimeout(() => {
-                typewriter.textContent = "";
-                i = 0;
-                typeEffect();
-            }, 2000);
-        }
-    }
-
-    typeEffect();
 });
