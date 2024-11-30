@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&family=Prompt:wght@400;700&family=Kanit:wght@400;700&display=swap');
 body {
     margin: 0;
     padding: 0;
     background-color: #E2E0E0;
-    font-family: "D-DINExp", "DM Sans",  "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: "Sarabun", "Prompt", "Kanit", "Mitr", "Noto Sans Thai",
+        "D-DINExp", "DM Sans", "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 .typewriter h1 {
     font-size: 5vw;
     line-height: 1.2;
@@ -14,6 +17,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
 }
+
 .content {
     max-width: 100%;
     background-color: white;
@@ -41,15 +45,17 @@ body {
     max-width: 30%;
     text-align: left;
 }
+
 .center-footer-content {
-    max-width: 30%;    
+    max-width: 30%;
 }
+
 .center-footer-content img {
     max-width: 30%;
     height: auto;
 }
 
-.right-footer-content{
+.right-footer-content {
     text-align: right;
     max-width: 25%;
 }
@@ -288,8 +294,9 @@ textarea {
     width: 100%;
     line-height: 25px;
     text-transform: uppercase;
-   
+
 }
+
 select {
     border: 0;
     border-bottom: 2px solid black;
@@ -330,8 +337,8 @@ select {
     max-width: 100%;
     display: inline-block;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: var(--text-color); /* ใช้สีข้อความตาม theme */
-    background-color: var(--content-background); /*ใช้สีพื้นหลังตาม theme */
+    color: var(--text-color);
+    background-color: var(--content-background);
 
 }
 
@@ -375,43 +382,47 @@ select:focus {
 
 .Journey-info p {
     text-align: center;
-    font-size: 1.5em; 
-    line-height: 1.8; 
-    color: #555; 
+    font-size: 1.5em;
+    line-height: 1.8;
+    color: #555;
 
 }
+
 .top-text-journey {
-   
-text-align: left;
-font-size: 24px;
-max-width: 75%;
-margin-top: 5%;
-margin-bottom: 15%;
+
+    text-align: left;
+    font-size: 24px;
+    max-width: 75%;
+    margin-top: 5%;
+    margin-bottom: 15%;
 }
 
 .top-text-journey p {
     background-color: #ffffff;
-    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
+    border-color: red;
     box-shadow: 0 0 10px rgb(189, 189, 189);
     max-width: 600px;
 }
-.left-text{
+
+.left-text {
     text-align: left;
+    max-width: 40%;
 }
-.right-text{
-    text-align: right ;
+
+.right-text {
+    text-align: right;
+    max-width: 40%;
 }
 
 
 .top-text-future {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     margin-left: 5%;
-    margin-right: 5%;
-    font-size: 1.2rem;
+    font-size: 20px;
     text-align: center;
     margin-top: 5%;
 
@@ -464,7 +475,7 @@ margin-bottom: 15%;
 }
 
 :root {
-    --background-color:#E2E0E0 ;
+    --background-color: #E2E0E0;
     --text-color: #000000;
     --content-background: white;
     --accent-color: #ff3b3f;
@@ -486,7 +497,10 @@ body {
     background-color: var(--content-background);
 }
 
-.logo, nav a.active, .entry-item h3, .btn-submit {
+.logo,
+nav a.active,
+.entry-item h3,
+.btn-submit {
     color: var(--accent-color);
 }
 
@@ -500,8 +514,8 @@ nav a:hover {
 }
 
 .typewriter h1 {
-    overflow: hidden; 
-    border-right: 3px solid; 
+    overflow: hidden;
+    border-right: 3px solid;
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 2px;
@@ -510,15 +524,28 @@ nav a:hover {
 
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 
 @keyframes blink {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
 }
+
 .typewriter h1 {
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     background-clip: text;
@@ -530,14 +557,27 @@ nav a:hover {
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
 }
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -559,7 +599,7 @@ nav a:hover {
     .top-text {
         font-size: 18px;
         text-align: center;
-        
+
     }
 
     .grid-container {
@@ -575,18 +615,23 @@ nav a:hover {
         flex-direction: column;
     }
 
-    .left-column, .right-column {
+    .left-column,
+    .right-column {
         max-width: 100%;
         margin-bottom: 20px;
     }
+
     .typewriter h1 {
         font-size: 6vw;
     }
-    .top-text-future, .bottom-text-future {
+
+    .top-text-future,
+    .bottom-text-future {
         font-size: 1rem;
         text-align: center;
     }
 }
+
 @media (max-width: 480px) {
     .logo {
         font-size: 30px;
@@ -618,12 +663,14 @@ nav a:hover {
         padding: 12px 25px;
         font-size: 16px;
     }
+
     .typewriter h1 {
         font-size: 8vw;
     }
-    .top-text-future, .bottom-text-future {
+
+    .top-text-future,
+    .bottom-text-future {
         font-size: 0.9rem;
     }
 
 }
-
