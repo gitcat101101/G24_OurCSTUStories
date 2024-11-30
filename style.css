@@ -428,28 +428,24 @@ select:focus {
 
 }
 
-.bottom-text-future {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 10%;
-}
-
 .future-top-img {
     display: flex;
     justify-content: center;
     padding-top: 10%;
 }
 
-.Future-info p {
-    background-color: #ffffff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(189, 189, 189);
-    max-width: 600px;
+.bottom-text-future {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+
+}
+
+.right-text-future{
+    text-align: right;
+    max-width: 50%;
 }
 
 .theme-toggle {
