@@ -335,12 +335,11 @@ select {
 
 }
 
-
-
 .Journey-info {
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .Journey-info h1 {
@@ -349,15 +348,12 @@ select {
     text-decoration: none;
     padding: 10px;
     font-weight: 700;
-    text-align: center;
-    max-height: 5%;
 }
 
 .Journey-info p {
     font-size: 1.1em;
     line-height: 1.8;
-    max-width: 30%;
-    color: #555;
+    max-width: 50%;
 }
 
 .post-border {
@@ -377,13 +373,6 @@ select:focus {
     margin-top: 5px;
 }
 
-.Journey-info p {
-    text-align: center;
-    font-size: 1.5em; 
-    line-height: 1.8; 
-    color: #555; 
-
-}
 .top-text-journey {
    
 text-align: left;
