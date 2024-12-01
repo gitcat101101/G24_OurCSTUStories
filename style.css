@@ -395,6 +395,8 @@ select:focus {
     max-width: 75%;
     margin-top: 5%;
     margin-bottom: 15%;
+    color:#000000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-text-journey p {
