@@ -517,20 +517,20 @@ nav a:hover {
     font-weight: bold;
     color: transparent; /*ต้องตั้งค่าให้เป็นโปร่งใสเพื่อใช้ background-clip */
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
-    background-size: 300%; /* ขยาย gradient เพื่อให้ดูเนียนขึ้น */
+    background-size: 300%; 
     background-clip: text;
-    -webkit-background-clip: text; /*สำหรับเบราว์เซอร์ที่ใช้ Webkit */
-    text-fill-color: transparent; /*Safari */
+    -webkit-background-clip: text; 
+    text-fill-color: transparent; 
 }
 
 @keyframes scrollText {
     0% {
-        transform: translateX(100%); /*เริ่มจากนอกจอทางขวา */
-        background-position: 0%; /*เริ่ม gradient ที่ตำแหน่งแรก */
+        transform: translateX(100%);
+        background-position: 0%; 
     }
     100% {
-        transform: translateX(-100%); /*สิ้นสุดนอกจอทางซ้าย */
-        background-position: 100%; /*เลื่อน gradient */
+        transform: translateX(-100%); 
+        background-position: 100%; 
     }
 }
 
