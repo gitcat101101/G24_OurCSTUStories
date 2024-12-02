@@ -384,7 +384,7 @@ select:focus {
     text-align: center;
     font-size: 1.5em;
     line-height: 1.8;
-    color: #555;
+    color: orangered;
 
 }
 
@@ -395,6 +395,8 @@ select:focus {
     max-width: 75%;
     margin-top: 5%;
     margin-bottom: 15%;
+    color:#000000;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .top-text-journey p {
